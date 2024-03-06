@@ -1,4 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:19-jdk-alpine
+ENV ROOT="/root/jelastic"
 
 RUN apk add --update curl wget bash && \
     rm -rf /var/cache/apk/*
